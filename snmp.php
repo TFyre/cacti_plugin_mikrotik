@@ -310,7 +310,7 @@ function cacti_snmp_walk($hostname, $community, $oid, $version, $username, $pass
 
 		/* force php to return numeric oid's */
 		if (function_exists("snmp_set_oid_numeric_print")) {
-			snmp_set_oid_numeric_print(TRUE);
+			snmp_set_oid_numeric_print(SNMP_OID_OUTPUT_NUMERIC);
 			$snmp_oid_included = true;
 		}
 
