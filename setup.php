@@ -193,7 +193,6 @@ function mikrotik_setup_table () {
 		`packets` bigint(20) unsigned NOT NULL,
 		`HCBytes` bigint(20) unsigned NOT NULL,
 		`last_seen` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-		`prevBytes` bigint(20) unsigned NOT NULL,
 		`present` tinyint(3) unsigned NOT NULL DEFAULT '1',
 		PRIMARY KEY (`host_id`,`name`),
 		KEY `name` (`name`),
